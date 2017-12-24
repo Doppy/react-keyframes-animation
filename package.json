@@ -1,23 +1,24 @@
 {
   "name": "react-keyframes-animation",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "n",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Doppy/react-keyframes-animation.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Doppy/react-keyframes-animation/issues"
-  },
-  "homepage": "https://github.com/Doppy/react-keyframes-animation#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "css": "^2.2.1"
+    "css": "^2.2.1",
+    "d3-interpolate": "^1.1.6",
+    "lodash": "^4.17.4",
+    "postcss-value-parser": "^3.3.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-router-dom": "^4.2.2",
+    "styled-components": "^2.4.0"
   }
 }
