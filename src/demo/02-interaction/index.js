@@ -17,7 +17,7 @@ class Interaction extends React.Component {
     const currentY = _.get(this.state, 'moveKeyframes.100%.y', 0);
 
     const toX = e.clientX - 200; // minus sidenav
-    const toY = e.clientY - 190; // minus header
+    const toY = e.clientY - 90; // minus header
     
     this.setState({
       moveKeyframes: {
@@ -35,7 +35,7 @@ class Interaction extends React.Component {
     const { moveKeyframes } = this.state;
     return (
       <div
-        style={{ width: '100vw', height: 500, background: '#f7f7f7' }}
+        className="content"
         onClick={this.handleClickStage}
       >
         <Animation keyframes={moveKeyframes} duration={1}>
@@ -58,6 +58,7 @@ class Interaction extends React.Component {
           }
           }
         </Animation>
+        <span>Click anywhere</span>
       </div>
     )
   }

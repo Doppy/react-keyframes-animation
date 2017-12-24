@@ -27,10 +27,8 @@ class Simple extends React.Component {
                 }}
               >
                 <div
+                  className="card"
                   style={{
-                    background: '#fff',
-                    border: '1px solid #ececec',
-                    width: 300,
                     transform: `matrix(${scale}, 0, 0, ${scale}, 0, ${y})`,
                     opacity: opacity,
                     boxShadow: `0 ${shadow}px ${shadow}px rgba(0, 0, 0, 0.2)`,
